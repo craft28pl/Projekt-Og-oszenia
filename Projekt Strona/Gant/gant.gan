@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2022-03-21" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3230" locale="pl_PL">
+    <description/>
+    <view zooming-state="default:4" id="gantt-chart">
+        <field id="tpd3" name="Nazwa zadania" width="200" order="0"/>
+        <field id="tpd4" name="Data rozpoczęcia" width="75" order="1"/>
+        <field id="tpd5" name="Data zakończenia" width="75" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+        <timeline>
+            <![CDATA[23,16]]>
+        </timeline>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Osoba" width="206" order="0"/>
+        <field id="1" name="Domyślna rola" width="90" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="17" name="PHP" color="#8cb6ce" meeting="false" start="2022-03-28" duration="25" complete="99" thirdDate="2022-03-14" thirdDate-constraint="0" expand="true">
+            <task id="8" name="PHP - wstęp" color="#8cb6ce" meeting="false" start="2022-03-28" duration="5" complete="100" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+                <depend id="0" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="0" name="PHP - logowanie i rejestracja" color="#8cb6ce" meeting="false" start="2022-04-04" duration="5" complete="100" thirdDate="2022-04-04" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="PHP - ogłoszenia" color="#8cb6ce" meeting="false" start="2022-04-11" duration="3" complete="99" thirdDate="2022-04-04" thirdDate-constraint="0" expand="true">
+                <depend id="15" type="2" difference="4" hardness="Strong"/>
+            </task>
+            <task id="15" name="PHP - komentarze" color="#8cb6ce" meeting="false" start="2022-04-20" duration="3" complete="100" thirdDate="2022-03-30" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="PHP - reszta funkcji" color="#8cb6ce" meeting="false" start="2022-04-25" duration="5" complete="100" thirdDate="2022-03-30" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="18" name="MySQL" meeting="false" start="2022-03-28" duration="13" complete="100" expand="true">
+            <task id="9" name="MySQL - wstęp" color="#8cb6ce" meeting="false" start="2022-03-28" duration="5" complete="100" thirdDate="2022-03-24" thirdDate-constraint="0" expand="true">
+                <depend id="2" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="2" name="MySQL - rozwinięcie" color="#8cb6ce" meeting="false" start="2022-04-04" duration="8" complete="100" thirdDate="2022-04-04" thirdDate-constraint="0" expand="false"/>
+        </task>
+        <task id="16" name="Połączenie projektu" color="#8cb6ce" meeting="false" start="2022-04-20" duration="3" complete="100" thirdDate="2022-04-07" thirdDate-constraint="0" expand="true"/>
+        <task id="19" name="HTML" meeting="false" start="2022-03-28" duration="13" complete="100" expand="true">
+            <task id="10" name="HTML - strona główna" color="#8cb6ce" meeting="false" start="2022-03-28" duration="5" complete="100" thirdDate="2022-03-28" thirdDate-constraint="0" expand="false">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="HTML - formularze" color="#8cb6ce" meeting="false" start="2022-04-04" duration="5" complete="100" thirdDate="2022-04-04" thirdDate-constraint="0" expand="true"/>
+            <task id="7" name="HTML - rozwój struktury strony" color="#8cb6ce" meeting="false" start="2022-04-11" duration="3" complete="100" thirdDate="2022-04-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="11" name="Ogólne - Logo, brief itp." color="#8cb6ce" meeting="false" start="2022-03-21" duration="5" complete="100" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="CSS - wygląd strony" color="#8cb6ce" meeting="false" start="2022-04-20" duration="3" complete="100" thirdDate="2022-03-30" thirdDate-constraint="0" expand="true">
+            <depend id="21" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="21" name="CSS - zakończenie" color="#8cb6ce" meeting="false" start="2022-04-25" duration="5" complete="100" thirdDate="2022-03-28" thirdDate-constraint="0" expand="true">
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="23" name="Responsywność" color="#8cb6ce" meeting="false" start="2022-05-02" duration="5" complete="100" thirdDate="2022-03-21" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Szymon" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Piotr " function="Default:1" contacts="" phone=""/>
+        <resource id="2" name="Jakub" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="3" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="2" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="21" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

@@ -1,0 +1,313 @@
+body, html{
+    height: 100%;
+}
+body{
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-height: 600px;
+}
+a, a p{
+    text-decoration: none;
+    color: black;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+.wrapper{
+    width: 100%;
+    font-family: lato;
+    height: auto;
+    min-height: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+.header-bar{
+    height: 50px;
+    width: 100%;
+    padding: 25px 0 25px 0;
+}
+.header-logo{
+    width: 33%;
+    height: inherit;
+    float: left;
+}
+.header-nav{
+    width: 33%;
+    height: inherit;
+    float: left;
+    text-align: center;
+    visibility: hidden;
+}
+.nav-bar{
+    display: inline-block;
+    padding: 0px;
+    vertical-align: middle;
+}
+.nav-bar a p{
+    user-select: none;
+	position: relative;
+}
+.nav-bar a p:hover{
+	cursor: pointer;
+}
+.nav-bar a p:before{
+	transition: 0.4s;
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	height: 3px;
+	width: 0px;
+	background-color: black;
+}
+.nav-bar a p:hover:before{
+	left: 0px;
+	transition: 0.4s;
+	width: 100%;
+}
+.nav-bar p, .header-profile input[type="submit"]{
+    padding: 15px;
+    margin: 0px;
+    font-size: 18px;
+}
+.header-logo p{
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 10px;
+}
+.header-profile{
+    width: 33%;
+    height: inherit;
+    float: left;
+    text-align: right;
+}
+.header-profile input[type="submit"]{
+    cursor: pointer;   
+    border-radius: 10px;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+.header-profile img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+main{
+    clear: both;
+    margin-bottom: 70px;
+    min-height: 740px;
+}
+.box-1{
+    width: 1920px;
+    margin-left: -360px;
+    background-color: #EDE5CE;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    overflow:hidden;
+}
+.main-wrapper{
+    padding: 40px; 
+    margin: auto;
+    max-width: 1200px;
+}
+.text-sphere{
+    width: inherit;
+    height: 400px;
+}
+.text-sphere h1{
+    font-size: 50px;
+    padding: 50px 0 50px 0;
+}
+.intro-sphere{
+    width:30%;
+    float:left;
+}
+.joined-sphere{
+    width: 70%; 
+    float: left;
+    padding: 70px 0 70px 0;
+}
+.description-sphere{
+    text-align: center;
+}
+.usable-sphere{
+    margin-top: 70px;
+    text-align: center;
+}
+.usable-sphere-option{
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+}
+.usable-sphere-button{
+    max-width: 100%;
+    transition: 0.2s;
+    background-color: #D9C296;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0.5px #AF9C7B;
+}
+.usable-sphere-button:hover{
+    box-shadow: none;
+    transition: 0.2s;
+}
+.usable-sphere-option a{
+    color: black;
+    text-decoration: none;
+}
+.box-2{
+    height: 50px;
+    max-width: 600px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.box-2 h4, .box-4 h4{
+    font-size: 30px;
+}
+.box-3{
+    width: 100%;
+    margin: auto;
+}
+.flex-sphere{
+    width: inherit;
+    text-align: center;
+}
+.flex-part{
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    background-color: #EDE5CE;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.flex-icon{
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+footer{
+    width: 1920px;
+    margin-left: -360px;
+    margin-top: auto;
+    height: 25px;
+    text-align: center;
+}
+footer p{
+    padding: 2px;
+}
+.box-4{
+    width: 1920px;
+    height: 500px;
+    margin-left: -360px;
+    text-align: center;
+    background-color: #AF9C7B;
+}
+.box-4 h4{
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.box-4 .flex-sphere{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: center;
+}
+.box-4 .flex-part{
+    transition: 0.2s;
+    height: 300px;
+    width: 100%;
+    font-size: 20px;
+}
+.box-4 .flex-icon{
+    margin-top: 50%;
+}
+
+@media screen and (min-width: 1001px){
+    .box-4 .flex-part:hover{
+        margin-top: 20px;
+        transition: 0.2s;
+    }
+}
+@media screen and (max-width: 1000px){
+    header{
+        min-height: 150px;
+    }
+    .header-bar{
+        text-align: center;
+    }
+    header .header-nav{
+        display: none;
+    }
+    header .header-logo{
+        float: none;
+        width: 100%;
+    }
+    header .header-profile{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    .box-1{
+        margin-left: 0px;
+        width: 100%;
+        min-height: 850px;
+    }
+    .intro-sphere{
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+    .intro-sphere h1{
+        padding-top: 0px;
+    }
+    .joined-sphere{
+        padding-top: 0px;
+        width: 100%;
+        float: none;
+    }
+    .usable-sphere-option{
+        display: block;
+    }
+    .box-3 .flex-part{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .box-4{
+        margin-left: 0px;
+        width: 100%;
+        height: 1100px;
+    }
+    .box-4 .flex-sphere{
+        flex-wrap: wrap;
+        row-gap: 5px;
+    }
+    .box-4 .flex-part{
+        width: 49%;
+        height: 200px;
+    }
+    .box-4 .flex-icon{
+        margin-top: 5%;
+    }
+    .flex-part p{
+        margin-top: 10px;
+    }
+    footer{
+        margin-left: 0px;
+        width: 100%;
+    }
+}

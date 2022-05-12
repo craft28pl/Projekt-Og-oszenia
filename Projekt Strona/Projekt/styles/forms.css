@@ -1,0 +1,49 @@
+form input[type="text"], form input[type="email"], form input[type="password"], form input[type="number"]{
+    width: 200px;
+    height: 30px;
+    margin: 0 0 10px 0;
+}
+form input[type="text"][class="half-row"]{
+    width: 100px;
+    height: 30px;
+    margin: 0 0 10px 0;
+    display: inline-block;
+}
+form input[type="submit"]{
+    margin: 0 0 20px 0px;
+}
+input:focus{
+    outline: none;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="number"],
+input[type="date"], input[type="tel"]{
+    background-color: #D9C296;
+    padding: 10px;
+    border: 0px;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 300px;
+    margin: 0 0 10px 0;
+}
+input[name="name"], input[name="surname"]{
+    width: 150px;
+}
+input[type="date"]{
+    width: 120px;
+    color: gray;
+    margin-left: 20px;
+}
+input[type="submit"]:not(input[name="logOut"]){
+    background-color: #D9C296;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0.5px #AF9C7B;
+    font-size: 16px;
+
+}
+input[type="submit"]:not(input[name="logOut"]):hover{
+    box-shadow: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
